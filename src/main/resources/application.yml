@@ -1,0 +1,24 @@
+#配置视图解析器来适配Jsp
+spring:
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+  application:
+    name: ems #设置应用服务名称（用于微服务，这里没用）
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver  #注册驱动
+    url: jdbc:mysql://localhost:3306/ems?characterEncoding=UTF-8 #注意字符集
+    username: root
+    password: root
+
+#设置项目路径
+server:
+  servlet:
+    context-path: /ems
+    jsp:
+      init-parameters:
+        develoment: true #开启jsp的热部署
+mybatis:
+  mapper-locations: classpath:com/ljh/ems/mapper/*.xml #mappper文件的位置
+  type-aliases-package: com.ljh.ems.entity
