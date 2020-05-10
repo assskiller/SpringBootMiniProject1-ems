@@ -89,7 +89,7 @@ public class UserController {
         {
             session.setAttribute("user",user);
             System.out.println("登陆成功，username is:"+user.getUsername());
-            return "redirect:/ems/emplist.jsp";
+            return "redirect:/emp/findAll";
         }
 
 }

@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/ems/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/my.css" />
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/ems/css/my.css" />
     <title>Title</title>
 </head>
 <body>
 
 <div class="loginForm">
-    <h1 class="title">添加员工界面</h1>
+    <h1 class="title" style="text-align: center">添加员工界面</h1>
     <form class="form-horizontal" action="${pageContext.request.contextPath}/emp/add">
         <div class="form-group">
             <label for="name" class="col-sm-2 control-label">员工姓名</label>

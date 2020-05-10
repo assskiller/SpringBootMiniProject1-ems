@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/ems/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/my.css" />
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/ems/css/my.css" />
     <title>Title</title>
 </head>
 <body>

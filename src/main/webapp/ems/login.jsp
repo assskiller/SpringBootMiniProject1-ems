@@ -28,6 +28,7 @@
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
                 <button type="submit" class="btn btn-default">登陆</button>
+                <a  class="btn btn-default" href="${pageContext.request.contextPath}/ems/register.jsp">注册</a>
             </div>
         </div>
     </form>

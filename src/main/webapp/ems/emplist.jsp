@@ -9,6 +9,7 @@
     <title>Title</title>
 </head>
 <body>
+<a href="${pageContext.request.contextPath}/ems/index.jsp">返回首页</a>
 <div class = "empTable">
     <h1 style="text-align: center">员工信息</h1>
     <table class="table table-striped">
@@ -29,9 +30,8 @@
                     <a href="${pageContext.request.contextPath}/emp/findOne?id=${emp.id}">修改员工</a></td>
             </tr>
         </c:forEach>
-
-
     </table>
+    <a class="btn btn-default" href="${pageContext.request.contextPath}/ems/empAdd.jsp">添加员工</a>
 </div>
 </body>
 </html>

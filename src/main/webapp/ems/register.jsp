@@ -43,19 +43,21 @@
 
             <div class="form-group">
                 <label  class="col-sm-2 control-label">性别</label>
-                <label class="radio-inline">
-                    <input type="radio" name="sex"  value="男"> 男
-                </label>
-                <label class="radio-inline">
-                    <input type="radio" name="sex"  value="女"> 女
-                </label>
+                <div class="col-sm-10">
+                    <label class="radio-inline">
+                        <input type="radio" name="sex"  value="男"> 男
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="sex"  value="女"> 女
+                    </label>
+                </div>
             </div>
 
             <div class="form-group">
                 <label  class="col-sm-2 control-label">验证码</label>
-                <img src="/ems/user/getCheckCodeImg" id="checkCode">
                 <div class="col-sm-10">
-                    <input type="password" class="form-control"  name="checkCode">
+                    <img src="/ems/user/getCheckCodeImg" id="checkCode">
+                    <input type="text" class="form-control"  name="checkCode">
                 </div>
             </div>
 
