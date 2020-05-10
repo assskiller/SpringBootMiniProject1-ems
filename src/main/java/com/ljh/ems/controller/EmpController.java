@@ -33,4 +33,11 @@ public class EmpController {
         return "redirect:/emp/findAll";  //重定向要把地址给全
     }
 
+    @GetMapping("delete")
+    String delete(String id)
+    {
+        empService.delete(id);
+        return "redirect:/emp/findAll";
+    }
+
 }

@@ -12,5 +12,10 @@
         insert into t_emp values (#{id},#{name},${salary},${age});
     </insert>
 
+<!--    删除员工-->
+    <delete id="delete" parameterType="String">
+        delete from t_emp where id = #{id};
+    </delete>
+
 
 </mapper>

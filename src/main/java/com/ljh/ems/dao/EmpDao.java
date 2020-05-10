@@ -10,4 +10,6 @@ public interface EmpDao {
     List<Emp> findAll();
 
     void add(Emp emp);
+
+    void delete(String id);
 }
