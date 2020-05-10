@@ -12,4 +12,8 @@ public interface EmpDao {
     void add(Emp emp);
 
     void delete(String id);
+
+    Emp findOneById(String id);
+
+    void update(Emp emp);
 }

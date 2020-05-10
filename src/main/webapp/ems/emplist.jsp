@@ -25,7 +25,8 @@
                 <td>${emp.name}</td>
                 <td>${emp.salary}</td>
                 <td>${emp.age}</td>
-                <td><a href="${pageContext.request.contextPath}/emp/delete?id=${emp.id}">删除员工</a> <a>修改员工</a></td>
+                <td><a href="${pageContext.request.contextPath}/emp/delete?id=${emp.id}">删除员工</a>
+                    <a href="${pageContext.request.contextPath}/emp/findOne?id=${emp.id}">修改员工</a></td>
             </tr>
         </c:forEach>
 

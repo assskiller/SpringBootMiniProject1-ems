@@ -2,7 +2,6 @@ package com.ljh.ems.service;
 
 
 import com.ljh.ems.entity.Emp;
-import com.ljh.ems.entity.User;
 
 import java.util.List;
 
@@ -12,4 +11,8 @@ public interface EmpService {
     void add(Emp emp);
 
     void delete(String id);
+
+    Emp findOne(String id);
+
+    void update(Emp emp);
 }

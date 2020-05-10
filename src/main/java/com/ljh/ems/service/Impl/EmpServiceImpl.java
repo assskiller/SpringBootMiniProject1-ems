@@ -2,7 +2,6 @@ package com.ljh.ems.service.Impl;
 
 import com.ljh.ems.dao.EmpDao;
 import com.ljh.ems.entity.Emp;
-import com.ljh.ems.entity.User;
 import com.ljh.ems.service.EmpService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -29,5 +28,15 @@ public class EmpServiceImpl implements EmpService {
     @Override
     public void delete(String id) {
         empDao.delete(id);
+    }
+
+    @Override
+    public Emp findOne(String id) {
+        return empDao.findOneById(id);
+    }
+
+    @Override
+    public void update(Emp emp) {
+        empDao.update(emp);
     }
 }

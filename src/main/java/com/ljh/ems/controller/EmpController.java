@@ -40,4 +40,19 @@ public class EmpController {
         return "redirect:/emp/findAll";
     }
 
+    @GetMapping("findOne")
+    String findOne(String id,Model model)
+    {
+        Emp emp =  empService.findOne(id);
+        model.addAttribute("emp",emp);
+        return "ems/update";
+    }
+
+    @GetMapping("update")
+    String update(Emp emp)
+    {
+        empService.update(emp);
+        return "redirect:/emp/findAll";
+    }
+
 }

@@ -17,5 +17,15 @@
         delete from t_emp where id = #{id};
     </delete>
 
+<!--    查询一个员工信息-->
+<!--    这边的id要和dao的函数名一样-->
+    <select id="findOneById" parameterType="String" resultType="Emp">
+        select * from t_emp where id = #{id};
+    </select>
+
+<!--    更新员工信息-->
+    <update id="update" parameterType="Emp">
+        update t_emp set name=#{name},salary=#{salary},age=#{age} where id = #{id};
+    </update>
 
 </mapper>
