@@ -2,6 +2,7 @@ package com.ljh.ems.service.Impl;
 
 import com.ljh.ems.dao.EmpDao;
 import com.ljh.ems.entity.Emp;
+import com.ljh.ems.entity.User;
 import com.ljh.ems.service.EmpService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,5 +19,10 @@ public class EmpServiceImpl implements EmpService {
     @Override
     public List<Emp> findAll() {
         return empDao.findAll();
+    }
+
+    @Override
+    public void add(Emp emp) {
+        empDao.add(emp);
     }
 }
