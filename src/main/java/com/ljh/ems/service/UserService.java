@@ -6,4 +6,5 @@ import org.springframework.transaction.annotation.Transactional;
 
 public interface UserService {
     void save(User user);
+    User login(User user);
 }

@@ -77,4 +77,22 @@ public class UserController {
         }
     }
 
+    @GetMapping("login")
+    public String login(User loginUser,HttpSession session)
+    {
+        User user = userService.login(loginUser);
+        if(user == null)
+        {
+            return "redirect:/ems/login.jsp";
+        }
+        else
+        {
+            session.setAttribute("user",user);
+            System.out.println("登陆成功，username is:"+user.getUsername());
+            return "redirect:/ems/emplist.jsp";
+        }
+
+}
+
+
 }

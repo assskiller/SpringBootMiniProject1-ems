@@ -20,7 +20,7 @@
 <body>
 
     <div class="loginForm">
-        <h1 class="title">登陆界面</h1>
+        <h1 class="title">注册界面</h1>
         <form class="form-horizontal" action="${pageContext.request.contextPath}/user/register">
             <div class="form-group">
                 <label for="username" class="col-sm-2 control-label">用户名</label>
@@ -63,7 +63,7 @@
 
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
-                    <button type="submit" class="btn btn-default">Sign in</button>
+                    <button type="submit" class="btn btn-default">注册</button>
                 </div>
             </div>
         </form>
